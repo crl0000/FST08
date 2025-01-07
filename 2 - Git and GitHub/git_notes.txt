@@ -26,3 +26,7 @@ git add 'filename.extension'
 
 - Create a commit 
 git commit -m "Description."
+
+- Check the history of the changes.
+git log (the yellow text is the commit hash)
+git log --oneline
