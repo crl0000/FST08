@@ -31,7 +31,7 @@ git commit -m "Description."
 git log (the yellow text is the commit hash)
 git log --oneline
 
-Branching and Merging
+** Branching and Merging
 
 - List all the available branches
 git branch -a
@@ -48,3 +48,17 @@ git merge [branch-name]
 
 - Delete a branch
 git branch -d [branch-name]
+
+** Remote Repository
+
+- Add a remote to the local repository
+git remote add origin [repository-url]
+
+- Rename the master branch to main
+git branch -M main
+
+- Push code from local repository to the remote repository for the first time.
+git push -u origin main
+
+- Push code from local repository to the remote repository
+git push
