@@ -9,8 +9,20 @@ git config user.email
 
 - Legends
 U - Untracked
+A - Added
+M - Modified
 
 - Git 3 stage architecture
 1) working area
 2) Staging area
 3) Commit stage
+
+- Check status of the project files and folder
+git status
+
+- Add all the files that have been Modified
+git add . - all files
+git add 'filename.extension'
+
+- Create a commit 
+git commit -m "Description."
