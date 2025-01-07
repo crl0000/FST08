@@ -1,0 +1,16 @@
+- Check git version 
+git --version
+
+- Configure git
+git config --global user.name "username"
+git config user.name
+git config --global user.email "email"
+git config user.email
+
+- Legends
+U - Untracked
+
+- Git 3 stage architecture
+1) working area
+2) Staging area
+3) Commit stage
