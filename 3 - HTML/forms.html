@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Forms</title>
+  </head>
+  <body>
+    <!-- Forms: allows us to collect user input. -->
+    <!-- attributes: allows us to give more information about a tag. -->
+    <h1>Creating Forms</h1>
+    <form action="">
+      <!-- type: allow us to specify what "type" of data the user will input. -->
+      <!-- name: acts as a container for the data the user inputs. -->
+      <!-- id: acts as the unique identifier for the tag. -->
+      <!-- placeholder: display a placeholder, the placeholder will be removed once the user adds their input. -->
+      <!-- required: requires the user to add the data. -->
+      <!-- for: accepts the id of the partner tag of the label. -->
+      <div>
+        <label for="fullname-id">Name:</label>
+        <input
+          type="text"
+          name="user-fullname"
+          id="fullname-id"
+          placeholder="John Doe"
+          required
+        />
+      </div>
+      <div>
+        <label for="email-id">Email:</label>
+        <input
+          type="email"
+          name="user-email"
+          id="email-id"
+          placeholder="johndoe@example.com"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="password-id">Password:</label>
+        <input
+          type="password"
+          name="user-password"
+          id="password-id"
+          placeholder="*******"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="age-id">Age:</label>
+        <input
+          type="number"
+          name="user-age"
+          id="age-id"
+          placeholder="30"
+          required
+          min="18"
+          max="100"
+        />
+      </div>
+
+      <label for="message-id">Message:</label>
+      <div>
+        <textarea
+          name="user-message"
+          id="message-id"
+          cols="30"
+          rows="10"
+          placeholder="What's on your mind?"
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="gender-id">Gender:</label>
+        <select name="user-gender" id="gender-id" required>
+          <option value="none" selected disabled hidden>
+            Select your Gender
+          </option>
+          <option value="M">Male</option>
+          <option value="F">Female</option>
+          <option value="O">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <!-- You can only choose one. -->
+        <label for="private-id">Private:</label>
+        <input
+          type="radio"
+          name="user-profile-status"
+          id="private-id"
+          value="private"
+        />
+        <label for="public-id">Public:</label>
+        <input
+          type="radio"
+          name="user-profile-status"
+          id="public-id"
+          value="public"
+        />
+      </div>
+
+      <div>
+        <!-- You can one or more options -->
+        <label for="action-id">Action:</label>
+        <input type="checkbox" name="genre" id="action-id" value="action">
+        <label for="thriller-id">Thriller:</label>
+        <input type="checkbox" name="genre" id="thriller-id" value="thriller">
+        <label for="sci-fi-id">Scifi:</label>
+        <input type="checkbox" name="genre" id="sci-fi-id" value="sci-fi">
+        <label for="comedy-id">Comedy:</label>
+        <input type="checkbox" name="genre" id="comedy-id" value="comedy">
+    </div>
+
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>

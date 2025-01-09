@@ -1,0 +1,94 @@
+/* id - # */
+/* Declaration Block: group multiple declarations. */
+/* Declaration: property:value; */
+/* { */
+/* property:value; */
+/* property:value; */
+/* property:value; */
+/* } */
+#text-styling {
+    /* font-family: 'Times New Roman', serif; - Default value */
+    /* font fallback */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Keyword Values */
+    font-weight: bold;
+    font-weight: bolder;
+    font-weight: lighter;
+    font-weight: normal;
+    /* Numerical Values */
+    font-weight: 100;
+    font-weight: 200;
+    font-weight: 300;
+    font-weight: 400;
+    font-weight: 500;
+    font-weight: 600;
+    font-weight: 700;
+    font-weight: 800;
+    font-weight: 900;
+
+    /* Font Style */
+    font-style: normal;
+    font-style: italic;
+    /* Text Align */
+    text-align: left;
+    text-align: right;
+    text-align: center;
+
+    /* Line Height */
+    line-height: 60px;
+
+    /* Letter Spacing */
+    letter-spacing: -4px; 
+    letter-spacing: 4px;
+}
+
+#text-decoration {
+    text-decoration-line: underline;
+    text-decoration-line: line-through;
+    text-decoration-line: overline;
+    text-decoration-thickness: 4px;
+    text-decoration-style: double;
+    text-decoration-style: dotted;
+    text-decoration-style: wavy;
+    text-decoration-style: dashed;
+    text-decoration-color: orange;
+    /* Combine all of the styles */
+    text-decoration: line-through dashed red 4px;
+}
+
+#colors {
+    /* Color Names */
+    color: tomato;
+    background-color: blanchedalmond;
+
+    /* RGB */
+    /* rgb(red, green, blue) */
+    /* Pass: 0 - 255 */
+    color: rgb(0, 255, 0);
+    background-color: rgb(255, 0, 0);
+
+    /* Hexadecimal */
+    /* #RRGGBB */
+    /* Pass: 0 - 9, A - F */
+    color: #faf0ca;
+    background-color: #0d3b66;
+}
+
+/* Units of Measurements */
+#absolute-unit-px {
+    /* Default: 16px */
+    /* 24 pixels - absolute unit of measurement */
+    /* absolute: means it will not change. */
+    font-size: 24px;
+}
+
+#relative-unit-em {
+    /* em: current font-size of the parent element */
+    /* relative to the font-size of the parent element. */
+    font-size: 3em;
+}
+
+#relative-unit-rem {
+    /* relative to the font-size of the root element */
+    font-size: 4rem; /* 64px */
+}
