@@ -1,0 +1,40 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+
+    /* repeat() function */
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+/* Media Queries */
+/* 
+    Breakpoints:
+    Mobile Devices: Less than 481px
+    iPads, Tablets: 481px - 768px
+    Small Screens, Laptops: 769px - 1024px
+    Desktops, Large Screens: 1025px - 1200px
+    Extra Large Screens, TV: 1201px and greater
+*/
+
+@media screen and (min-width: 1025px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

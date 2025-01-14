@@ -1,0 +1,30 @@
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: row; Default */
+
+  /* justify-content: location of the items in the main-axis. */
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  justify-content: flex-end;
+  justify-content: flex-start; /* Default */
+  /* align-items: location of the items in the cross-axis.*/
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch; /* Default */
+
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  flex-wrap: nowrap; /* Default */
+}
+
+
+.flexItem1 {
+    flex-grow: 0; /* Default - it will not grow */
+    flex-grow: 1; /* Willing to grow */
+    flex-shrink: 1; /* Default - willing to shrink */
+    flex-shrink: 0; /* Not willing to shrink */
+}

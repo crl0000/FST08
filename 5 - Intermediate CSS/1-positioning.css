@@ -1,0 +1,49 @@
+/* Static Positioning */
+/* Default position of the elements once rendered. */
+/* Relative */
+
+/* Relative: relative to its original position. */
+#relative{
+    /* position: static; */
+    background-color: #e07a5f;
+    color: #f4f1de;
+    position: relative;
+    /* Access to 4 new properties. */
+    /* top, left, right, bottom */
+    top: 40px;
+    left: 40px;
+}
+
+/* Absolute */
+#absolute {
+    /* Relative to its parent container */
+    background-color: #083d77;
+    color: #ebebd3;
+    position: absolute;
+    /* Access to 4 new properties. */
+    /* top, left, right, bottom */
+    top: 0px;
+    right: 0px;
+}
+
+
+#fixed {
+    /* Relative to viewport */
+    background-color: #fb3640;
+    color: #0a2463;
+    position: fixed;
+    /* Access to 4 new properties. */
+    /* top, left, right, bottom */
+    bottom: 0px;
+    right: 0px;
+}
+
+#sticky {
+    /* Relative to viewport */
+    background-color: #3a405a;
+    color: #f9dec9;
+    position: sticky;
+    /* Access to 4 new properties. */
+    /* top, left, right, bottom */
+    top: 0px;
+}

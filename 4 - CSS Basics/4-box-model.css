@@ -1,0 +1,68 @@
+/* Each element within the page is inside of a box */
+/* How to open box model. */
+/* 1. Inspect */
+/* 2. Click the Select element button. */
+/* 3. Click on an element. */
+/* 3. Choose computed section. */
+/* Padding: space within the box. */
+.box1{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+}
+/* Padding Shorthand */
+.box2 {
+    /* 1 value - all sides */
+    /* 2 values - (top-bottom) (right-left)*/
+    /* 3 values - top, (right-left), bottom */
+    /* 4 values - top, right, bottom, left (clockwise) */
+    padding: 10px 20px 30px 40px;
+}
+
+/* Margin: Space outside the box */
+.box3 {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+/* Margin Shorthand */
+.box4 {
+    /* 1 value - all sides */
+    /* 2 values - (top-bottom) (right-left)*/
+    /* 3 values - top, (right-left), bottom */
+    /* 4 values - top, right, bottom, left (clockwise) */
+    margin: 10px 20px 30px 40px;
+}
+
+/* Border */
+.mix-borders {
+    /* 1 value - all sides */
+    /* 2 values - (top-bottom) (right-left)*/
+    /* 3 values - top, (right-left), bottom */
+    /* 4 values - top, right, bottom, left (clockwise) */
+    background-color: #fe7f2d;
+    color: #233d4d;
+    height: 100px;
+    width: 200px;
+    border-style: solid;
+    border-style: dashed;
+    border-style: dotted;
+    border-style: double;
+    border-width: 8px;
+    border-color: #03045e;
+    /* Shorthand */
+    border: dashed #233d4d 10px;
+}
+
+.circle-container {
+    background-color: #00296b;
+    color: #ffd500;
+    /* same value for height and width */
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    text-align: center;
+}
